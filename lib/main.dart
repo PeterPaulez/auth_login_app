@@ -1,3 +1,4 @@
+import 'package:auth_login_app/services/google_signin.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
             IconButton(
               icon: Icon(FontAwesomeIcons.doorOpen),
               onPressed: () {
-                // TODO: Google singOut
+                GoogleSigninService.signOut();
               },
             ),
           ],
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
               children: [
                 MaterialButton(
                   onPressed: () {
-                    // Sign In with Google
+                    GoogleSigninService.signIn();
                   },
                   splashColor: Colors.transparent,
                   minWidth: double.infinity,
