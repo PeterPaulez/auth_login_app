@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "979794623867",
+    "project_id": "flutter-avanzado-sign-in",
+    "storage_bucket": "flutter-avanzado-sign-in.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979794623867:android:4a179f6119dbd64414d1de",
+        "android_client_info": {
+          "package_name": "com.pedropablo.auth_login_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979794623867-miq1l0gfiei0rtbsbimhcapbonjcf6dq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pedropablo.auth_login_app",
+            "certificate_hash": "3264a69129320e11fefcc2bb593d423a999e853f"
+          }
+        },
+        {
+          "client_id": "979794623867-ktggdjkfdp9e4vg4u4n1qrpq3m3jrbhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYdcyZw2sXOAzrtulM4ifHoJQzotvOVCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979794623867-ktggdjkfdp9e4vg4u4n1qrpq3m3jrbhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
