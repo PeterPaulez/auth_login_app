@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.auth_login_app">
+    package="com.pedropablo.auth_login_app">
    <application
         android:label="auth_login_app"
         android:icon="@mipmap/ic_launcher">

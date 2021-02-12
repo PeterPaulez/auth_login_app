@@ -1,4 +1,4 @@
-package com.example.auth_login_app
+package com.pedropablo.auth_login_app
 
 import io.flutter.embedding.android.FlutterActivity
 
