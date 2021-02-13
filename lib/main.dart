@@ -1,6 +1,8 @@
+import 'package:auth_login_app/services/apple_signin.dart';
 import 'package:auth_login_app/services/google_signin.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,6 +36,7 @@ class MyApp extends StatelessWidget {
                   },
                   splashColor: Colors.transparent,
                   minWidth: double.infinity,
+                  height: 44,
                   color: Colors.black,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
@@ -54,6 +57,12 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
+                SignInWithAppleButton(
+                  onPressed: () => AppleSigninService.singIn(),
+                )
               ],
             ),
           ),
