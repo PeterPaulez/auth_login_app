@@ -3,14 +3,21 @@ import 'package:http/http.dart' as http;
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 class AppleSigninService {
+  static String clientId = 'com.pedropablo.signinservice';
+  static String redirectUri =
+      'https://flutter-google-singin.herokuapp.com/api/usuario/apple/callback';
+
   static void singIn() async {
     try {
       final credential = await SignInWithApple.getAppleIDCredential(
-        scopes: [
-          AppleIDAuthorizationScopes.email,
-          AppleIDAuthorizationScopes.fullName,
-        ],
-      );
+          scopes: [
+            AppleIDAuthorizationScopes.email,
+            AppleIDAuthorizationScopes.fullName,
+          ],
+          webAuthenticationOptions: WebAuthenticationOptions(
+            clientId: clientId,
+            redirectUri: Uri.parse(redirectUri),
+          ));
 
       print(credential);
       print(credential.authorizationCode);
